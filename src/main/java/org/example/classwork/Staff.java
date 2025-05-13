@@ -1,0 +1,4 @@
+package org.example.classwork;
+
+public class Staff {
+}
