@@ -1,25 +1,32 @@
 package org.example.classwork2;
 
-import org.example.classwork.Principal;
 
 public class Main {
     public static void main(String[] args) {
-        Principal principal = new Principal("Principal Ade",30);
+        Principal p = new Principal("Mr Emma",1,"001a");
+        Applicants applicants= new Applicants("Chidera",13,"03s");
+        Applicants applicants1 = new Applicants("Rodeeyah",18,"06a");
 
-        Applicants applicants = new Applicants("Ade",4,"2005");
-        Applicants applicants2 = new Applicants("Adebimpe",20,"2007");
+       Students students= new Students("Rodeeyah",18,"001a","Mathematics");
+       Students students1 = new Students("Daniel",21,"069a","English");
 
-        Teachers teacher = new Teachers("Uncle Malik",30,"300");
+        p.admittedApplicants(applicants);
+        p.admittedApplicants(applicants1);
 
-        Courses programming = new Courses();
+        Courses courses = new Courses("Mathematics","MtH101");
+        Courses courses1 = new Courses("English","GNS101");
 
-        teacher.teach(programming);
+        Teachers teacher1 = new Teachers("Mrs Ese",54,"76ra");
 
-
+       teacher1.teaching(courses);
+       students.takeCourses(courses);
+       p.Expel(9);
+       students1.takeCourses(courses1);
 
 
 
 
 
     }
+
 }

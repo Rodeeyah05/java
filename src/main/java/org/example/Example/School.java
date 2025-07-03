@@ -7,9 +7,10 @@ public class School{
         System.out.println("I am going to school");
         return "";
     }
+
+
+
     public static void main(String[] args) {
         NameOfSchool();
-
-
     }
 }

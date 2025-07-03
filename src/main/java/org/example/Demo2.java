@@ -15,7 +15,7 @@ public class Demo2 {
     }
     public  static void main(String[] args) {
         Demo2 demo = new Demo2();
-        System.out.println(demo.JambScore(100));
+        System.out.println(demo.JambScore(140));
 
     }
 }

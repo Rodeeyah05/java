@@ -22,5 +22,6 @@ public class People {
         p.Age=30;
         System.out.println(p.Name);
     }
+
 }
 

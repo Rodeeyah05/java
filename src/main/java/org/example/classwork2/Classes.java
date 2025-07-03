@@ -1,16 +1,15 @@
 package org.example.classwork2;
 
-import org.example.classwork.Teacher;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Classes {
     private String name;
-    private Teacher teacher;
+    private Teachers teacher;
     private List<Students> students = new ArrayList<>();
 
-    public Classes(String name, Teacher teacher, List<Students> students) {
+    public Classes(String name, Teachers teacher, List<Students> students) {
         this.name = name;
         this.teacher = teacher;
         this.students = students;
@@ -24,11 +23,11 @@ public class Classes {
         this.name = name;
     }
 
-    public Teacher getTeacher() {
+    public Teachers getTeacher() {
         return teacher;
     }
 
-    public void setTeacher(Teacher teacher) {
+    public void setTeacher(Teachers teacher) {
         this.teacher = teacher;
     }
 

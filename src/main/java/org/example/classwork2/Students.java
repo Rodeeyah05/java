@@ -1,38 +1,17 @@
 package org.example.classwork2;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Students extends Person {
-    int mark;
-    List<Courses> courses = new ArrayList<>();
-    boolean isEnrolled;
-    public Students(String name, int age, String id) {
+    private String courses;
+
+    public Students(String name, int age, String id, String courses) {
         super(name, age, id);
+        this.courses = courses;
     }
 
-    public Students(){
-    }
+    public void takeCourses(Courses course) {
+        System.out.println(name + " " + "is taking"+" "+ course.getCode()+ " "+ course.getTitle());
 
-
-    public void takeCourse(Courses course) {
-       courses.add(course);
-    }
-    public List<Courses> getCourses() {
-        return courses;
-    }
-    public void expel(){
-        isEnrolled = false;
-    }
-    public boolean isEnrolled() {
-        return isEnrolled;
-    }
-
-    public int getMark() {
-        return mark;
-    }
-
-    public void setMark(int mark) {
-        this.mark = mark;
     }
 }

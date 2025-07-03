@@ -8,6 +8,7 @@ public class Demo{
         String address = "Ikeja ";
         return name + address;
     }
+
     public static void main(String[] args) {
         System.out.println(Demo.SomeonesName());
 
